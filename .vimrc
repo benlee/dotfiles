@@ -75,14 +75,8 @@ fun SetupVAM()
         " option2:  au GUIEnter * call SetupVAM()
         " See BUGS sections below [*]
 
-call pathogen#infect()
-runtime! autoload/fugitive.vim
 map <C-n> :NERDTreeToggle<CR>
 set laststatus=2
-set statusline=%<\ %f\ %{fugitive#statusline()}
-fun SBT_JAR()
-     return "/Users/blee/clean.web/foursquare.web/sbtlib/sbt-launch-0.75"
-endfun
 
 set colorcolumn=120
 function! WriteRegs()
